@@ -6,7 +6,7 @@
   margin-left: calc(-50vw + 50%);
   margin-right: calc(-50vw + 50%);
   margin-top: -2.7vw; /* corrige hueco blanco que deja Quarto por headroom/padding interno */
-  background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+  background-image: linear-gradient(rgba(2,0,0,0.25), rgba(0,0,0,0.25)),
                      url("images/peaches.jpg");
   background-size: cover;
   background-position: center;
@@ -58,23 +58,22 @@ main {
 .navbar .nav-link,
 .navbar-brand,
 .navbar-title {
-  color: #F7F0E4 !important;
+  color: var(--color-sand) !important;
   transition: color 0.3s ease;
 }
 
 /* Estado al hacer scroll */
 .navbar.scrolled {
   position: fixed;
-  background-color: #E55534 !important; 
-  box-shadow: 0 2px 8px #152222;
+  background-color: var(--color-ember) !important; 
+  box-shadow: 0 2px 8px var(--color-ink);
   padding-top: 0.15rem;
   padding-bottom: 0.15rem;
 }
 
-.navbar.scrolled .nav-link,
-.navbar.scrolled .navbar-brand,
-.navbar.scrolled .navbar-title {
-  color: #F7F0E4 !important;
+.navbar.scrolled {
+  background-color: var(--color-ember) !important;
+  box-shadow: 0 2px 8px var(--color-ink);
 }
 
 .hero-content h2.anchored,
@@ -90,4 +89,144 @@ main {
   height: 60px;
   width: auto;
   z-index: 5;
+}
+
+/* ==========================================================
+   INTRO SECTION
+   ========================================================== */
+
+.intro-section {
+  max-width: 900px;
+
+  margin:
+    clamp(4rem, 8vw, 8rem)
+    auto
+    clamp(6rem, 10vw, 10rem);
+
+  padding:
+    clamp(2rem, 4vw, 3.5rem);
+
+  background: rgba(255, 253, 250, 0.92);
+
+  backdrop-filter: blur(12px);
+
+  border-radius: var(--radius);
+
+  border: 1px solid var(--surface-card-border);
+
+  box-shadow: var(--shadow-card);
+
+  position: relative;
+}
+
+.intro-section::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  right: 0;
+
+  height: 5px;
+
+  border-radius: var(--radius) var(--radius) 0 0;
+
+  background: var(--gradient-thermal);
+}
+
+.intro-section h3 {
+  margin-bottom: 1.25rem;
+
+  font-family: var(--font-body);
+
+  font-size: 0.85rem;
+
+  font-weight: 700;
+
+  letter-spacing: 0.12em;
+
+  text-transform: uppercase;
+
+  color: var(--color-teal);
+}
+
+.intro-section p {
+  font-family: var(--font-body);
+
+  color: var(--color-ink);
+
+  font-size: 1.05rem;
+
+  line-height: 1.9;
+
+  max-width: 70ch;
+}
+
+.home-page {
+  font-family: var(--font-body);
+  color: var(--color-ink);
+}
+
+/* Hero siempre blanco */
+
+.hero-content h1,
+.hero-content h2,
+.hero-content h3,
+.hero-content h4 {
+  color: var(--color-sand) !important;
+}
+
+.hero-content {
+  color: var(--color-sand);
+}
+
+/* Navbar transparente sobre el hero */
+
+body.home-page .navbar {
+  background: transparent !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+/* Texto blanco en navbar */
+
+body.home-page .navbar-brand,
+body.home-page .navbar-title,
+body.home-page .nav-link {
+  color: var(--color-sand) !important;
+}
+
+/* Hero debajo del navbar */
+
+body.home-page #quarto-header {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+/* Elimina espacio reservado para el header */
+
+body.home-page {
+  padding-top: 0 !important;
+}
+
+body.home-page main,
+body.home-page #quarto-content,
+body.home-page .content {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* Hero arrancando desde el borde superior de la ventana */
+
+
+.hero {
+margin-top: -80px;
+height: calc(100vh + 68px);
 }

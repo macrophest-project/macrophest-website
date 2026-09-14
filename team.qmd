@@ -1,72 +1,97 @@
 ---
 title: "Our Team"
 format: html
-css: overview.css
+css: [theme.css, team.css]
 ---
 
 ::: section-block
 # Working team
-
 :::
 
-:::::::::: stats-grid
-::: stat-box
+::::::::::::::::: team-grid
+:::: team-card
+::: avatar
+![](images/team/IMoralesCastilla.jpg)
+:::
+
 ### Ignacio Morales Castilla
 
 Principal Investigator
+::::
+
+:::: team-card
+::: avatar
+M1
 :::
 
-::: stat-box
 ### Member 1
 
 Role, academic status
+::::
+
+:::: team-card
+::: avatar
+M2
 :::
 
-::: stat-box
-### member 2
+### Member 2
 
-role, academic status and affiliation.
+Role, academic status and affiliation
+::::
+
+:::: team-card
+::: avatar
+M3
 :::
 
-::: stat-box
-### member 3
+### Member 3
 
-role, academic status and affiliation.
+Role, academic status and affiliation
+::::
+
+:::: team-card
+::: avatar
+M4
 :::
 
-::: stat-box
-### member 4
+### Member 4
 
-role, academic status and affiliation.
+Role, academic status and affiliation
+::::
+
+:::: team-card
+::: avatar
+M5
 :::
 
-::: stat-box
-### member 5
+### Member 5
 
-role, academic status and affiliation.
+Role, academic status and affiliation
+::::
+
+:::: team-card
+::: avatar
+M6
 :::
 
-::: stat-box
-### member 6
+### Member 6
 
-role, academic status and affiliation.
-:::
-::::::::::
+Role, academic status and affiliation
+::::
+:::::::::::::::::
 
 ::: section-block
-# Collaboratos 
-
+# Collaborators
 :::
 
-:::::::::: stats-grid
-::: stat-box
+::::: team-grid
+:::: team-card
+::: avatar
+M1
+:::
+
 ### Mercedes Uscola Fernández
 
-Academic status and affiliation
-:::
-
-::: stat-box
-### etc etc
-
-Academic status and affiliation
-:::
+PhD, Associate professor at Universidad Rey Juan Carlos. Expert in plant eco-physiology
+::::
+:::::

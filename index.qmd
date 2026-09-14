@@ -1,7 +1,9 @@
 ---
 page-layout: full
 toc: false
-css: styles.css
+css:
+  - theme.css
+  - styles.css
 body-class: home-page
 ---
 
@@ -20,11 +22,18 @@ Pronosticos macroecológicos de fenología de cultivos y plagas en el espacio y 
 ::::
 :::::
 
-::: home-page
+::: {.intro-section}
 
-The biological impacts of climate change will have major implications for ecosystem functioning and stability. With rising global temperatures many species are shifting geographically—moving their distributions northward and higher in altitude—and temporally—experiencing recurring life-history events, their phenology, earlier in time. These shifts have cascading effects on ecosystem services including food supply, increasingly threatened by pests that thrive under warmer conditions . In this context, accurate ecological forecasts are urgently needed for both mitigation and human adaptation to future warming.
+### Project overview
+
+The biological impacts of climate change will have major implications for ecosystem functioning and stability. With rising global temperatures many species are shifting geographically, moving their distributions northward and higher in altitude, and temporally, experiencing recurring life-history events earlier in time.
+
+These shifts have cascading effects on ecosystem services including food supply, increasingly threatened by pests that thrive under warmer conditions.
+
+In this context, accurate ecological forecasts are urgently needed for both mitigation and human adaptation to future warming.
+
 :::
-
+  
 ```{=html}
 <script>
 document.addEventListener("DOMContentLoaded", () => {

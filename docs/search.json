@@ -81,7 +81,7 @@
     "href": "team.html",
     "title": "Our Team",
     "section": "",
-    "text": "Working team\n\n\n\nIgnacio Morales Castilla\nPrincipal Investigator\n\n\nMember 1\nRole, academic status\n\n\nmember 2\nrole, academic status and affiliation.\n\n\nmember 3\nrole, academic status and affiliation.\n\n\nmember 4\nrole, academic status and affiliation.\n\n\nmember 5\nrole, academic status and affiliation.\n\n\nmember 6\nrole, academic status and affiliation.\n\n\n\nCollaboratos\n\n\n\nMercedes Uscola Fernández\nAcademic status and affiliation\n\n\netc etc\nAcademic status and affiliation"
+    "text": "Working team\n\n\n\n\n\n\n\nIgnacio Morales Castilla\nPrincipal Investigator\n\n\n\n\nM1\n\n\nMember 1\nRole, academic status\n\n\n\n\nM2\n\n\nMember 2\nRole, academic status and affiliation\n\n\n\n\nM3\n\n\nMember 3\nRole, academic status and affiliation\n\n\n\n\nM4\n\n\nMember 4\nRole, academic status and affiliation\n\n\n\n\nM5\n\n\nMember 5\nRole, academic status and affiliation\n\n\n\n\nM6\n\n\nMember 6\nRole, academic status and affiliation\n\n\n\n\nCollaborators\n\n\n\n\nM1\n\n\nMercedes Uscola Fernándex\nPhD, Associate professor at Universidad Rey Juan Carlos. Expert in plant eco-physiology"
   },
   {
     "objectID": "about.html#our-main-goals",
@@ -103,5 +103,33 @@
     "title": "About",
     "section": "Contact Form",
     "text": "Contact Form\nFor anyone who wants to collaborate with the project."
+  },
+  {
+    "objectID": "team.html#piModalLabel",
+    "href": "team.html#piModalLabel",
+    "title": "Our Team",
+    "section": "Ignacio Morales-Castilla",
+    "text": "Ignacio Morales-Castilla"
+  },
+  {
+    "objectID": "team.html#markdown",
+    "href": "team.html#markdown",
+    "title": "Our Team",
+    "section": "Markdown",
+    "text": "Markdown\ntitle: “Our Team” format: html css: [theme.css, team.css] —"
+  },
+  {
+    "objectID": "team.html#markdown-1",
+    "href": "team.html#markdown-1",
+    "title": "Our Team",
+    "section": "Markdown",
+    "text": "Markdown\ntitle: “Our Team” format: html css: [theme.css, team.css] —"
+  },
+  {
+    "objectID": "team.html#markdown-2",
+    "href": "team.html#markdown-2",
+    "title": "Our Team",
+    "section": "Markdown",
+    "text": "Markdown\ntitle: “Our Team” format: html css: [theme.css, team.css] —"
   }
 ]
