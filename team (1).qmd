@@ -1,0 +1,95 @@
+---
+title: "Our Team"
+format: html
+css: [theme.css, team.css]
+---
+
+::: section-block
+# Working team
+:::
+
+:::: team-grid
+::: {.team-card .featured}
+::: avatar
+IMC
+:::
+
+### Ignacio Morales Castilla
+
+Principal Investigator. Thermal ecology, macroecology and global change biology.
+:::
+
+::: team-card
+::: avatar
+M1
+:::
+
+### Member 1
+
+Role, academic status
+:::
+
+::: team-card
+::: avatar
+M2
+:::
+
+### Member 2
+
+Role, academic status and affiliation
+:::
+
+::: team-card
+::: avatar
+M3
+:::
+
+### Member 3
+
+Role, academic status and affiliation
+:::
+
+::: team-card
+::: avatar
+M4
+:::
+
+### Member 4
+
+Role, academic status and affiliation
+:::
+
+::: team-card
+::: avatar
+M5
+:::
+
+### Member 5
+
+Role, academic status and affiliation
+:::
+
+::: team-card
+::: avatar
+M6
+:::
+
+### Member 6
+
+Role, academic status and affiliation
+:::
+::::
+
+::: section-block
+# Collaborators
+:::
+
+::: team-list
+::: team-row
+**Mercedes Uscola Fernández** <span>Academic status and affiliation</span>
+:::
+
+::: team-row
+**etc etc** <span>Academic status and affiliation</span>
+:::
+:::

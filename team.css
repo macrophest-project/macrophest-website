@@ -1,0 +1,131 @@
+/* ============================================================
+   TEAM PAGE
+   Depends on theme.css being loaded first (uses its variables).
+   ============================================================ */
+
+.section-block {
+  max-width: var(--content-max);
+  margin: 3rem auto 1.5rem;
+  padding: 0 1.5rem;
+}
+
+.section-block h1 { font-size: 2rem; margin-bottom: 0.4rem; }
+
+.section-block::after {
+  content: "";
+  display: block;
+  width: 5rem;
+  height: 3px;
+  margin-top: 0.6rem;
+  background: var(--gradient-thermal);
+  border-radius: 2px;
+}
+
+/* Two fixed, outlined squares behind the content — a nod to the
+   quadrats used in field ecology sampling, not a generic blurred
+   blob. Very low opacity so they read as texture, not decoration. */
+body::before, body::after {
+  content: "";
+  position: fixed;
+  border: 1.5px solid var(--color-forest);
+  opacity: 0.05;
+  pointer-events: none;
+  z-index: -1;
+}
+body::before { width: 220px; height: 220px; top: 12%; right: 6%; transform: rotate(-6deg); }
+body::after  { width: 150px; height: 150px; bottom: 15%; left: 4%; border-color: var(--color-teal); transform: rotate(9deg); }
+
+/* --- Core team: PI featured, members standard --- */
+.team-grid {
+  max-width: var(--content-max);
+  margin: 0 auto 3rem;
+  padding: 0 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+
+.team-card {
+  background: var(--surface-card);
+  border: 1px solid var(--surface-card-border);
+  border-left: 3px solid var(--color-forest);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.4rem;
+}
+
+.team-card.featured {
+  grid-column: span 2;
+  border-left-width: 4px;
+  border-left-color: var(--color-ember);
+  padding: 1.75rem 2rem;
+}
+
+.team-card h3 {
+  font-size: 1.15rem;
+  margin: 0.75rem 0 0.15rem;
+  color: var(--color-ink);
+}
+.team-card.featured h3 { font-size: 1.4rem; }
+
+.team-card p { margin: 0; color: var(--text-muted); font-size: 0.95rem; }
+
+.avatar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 50%;
+  background: var(--color-forest);
+  color: var(--color-sand);
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+.team-card.featured .avatar {
+  width: 3.5rem;
+  height: 3.5rem;
+  font-size: 1.2rem;
+  background: var(--color-ember);
+}
+
+/* If you add real photos later, this makes an <img> behave the
+   same way the initials avatar does. */
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* --- Collaborators: quieter list, not another card grid --- */
+.team-list {
+  max-width: var(--content-max);
+  margin: 0 auto 4rem;
+  padding: 0 1.5rem;
+}
+
+.team-row {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  padding: 0.7rem 0;
+  border-bottom: 1px solid var(--surface-card-border);
+}
+
+.team-row::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  flex-shrink: 0;
+  background: var(--color-teal);
+  border-radius: 1px;
+}
+
+.team-row strong { color: var(--color-ink); }
+.team-row span { color: var(--text-muted); font-size: 0.95rem; }
+
+@media (max-width: 720px) {
+  .team-grid { grid-template-columns: 1fr; }
+  .team-card.featured { grid-column: span 1; }
+}

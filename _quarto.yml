@@ -1,0 +1,34 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "CROPMED"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: overview.qmd
+        text: Overview
+      - href: visualizer.qmd
+        text: Visualize data
+      - href: qualityIndicators.qmd
+        text: Data Quality Indicators        
+      - href: download.qmd
+        text: Download
+      - href: about.qmd
+        text: About
+    right:
+      - icon: github
+        href: https://github.com/cropmed-project/CropMED
+      - text: '<img src="icons/zenodo-white.svg" width="112" height="16" alt="Zenodo" style="vertical-align: middle;">'
+        href: https://doi.org/10.5281/zenodo.21672597
+  page-navigation: true
+format:
+  html:
+    theme: sandstone
+    toc: true
+    include-after-body: footer.html
+
+editor: visual
+

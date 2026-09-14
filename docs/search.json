@@ -1,0 +1,107 @@
+[
+  {
+    "objectID": "visualizer.html",
+    "href": "visualizer.html",
+    "title": "Visualizer",
+    "section": "",
+    "text": "Select a crop:"
+  },
+  {
+    "objectID": "overview.html",
+    "href": "overview.html",
+    "title": "CropMED main features",
+    "section": "",
+    "text": "141\nUnique crops\n\n\n214\nCrops including varieties and cultivars\n\n\n1,705\nAdministrative Units\n\n\n92%\nof admin. units at third administrative level (provinces, governorates, prefectures, NUTS3, etc).\n\n\n47\nCountries reporting official statistics\n\n\n2023\nMost frequent year reporting crop areas\n\n\n94%\nCorrelation with FAO data on crop hectares for 47 countries included in CropMED\n\n\n\nCrop species richness distribution\nThe following map shows the number of crops with at least one hectare reported at each administrative unit.\n\n\n\nCrop hectares distribution\nIn the following graph, the rectangle area shows the proportion of area occupied by each crop relative to the total cropped hectares included in CropMED.\n\n\n\nData validation\nOverall, we found high correlation (\\(R^2 = 0.094,\\ \\textrm{NRMSE}=0.0015\\)) between data from CropMED administrative units aggregated at the country-level and those reported from FAOSTAT (https://www.fao.org/faostat/en/#data/QCL). Here we show the validation for some of the most relevant crops included in CropMED, where countries with higher divergences are pointed out."
+  },
+  {
+    "objectID": "download.html",
+    "href": "download.html",
+    "title": "Download files",
+    "section": "",
+    "text": "TipRecommendation\n\n\n\nBy default, we suggest downloading the .csv file. If the user aims to use CropMED for spatial analysis under GIS workflows, we suggest downloading the .gpkg version"
+  },
+  {
+    "objectID": "download.html#download-links",
+    "href": "download.html#download-links",
+    "title": "Download files",
+    "section": "Download links",
+    "text": "Download links\n\nDownload the main dataset (Comma-Separated Values file) (7.2 MB)\nDownload the geographic dataset (GeoPackage file) (642.5MB)"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "Brief description of MaCroPheST project, one paragraph."
+  },
+  {
+    "objectID": "about.html#contact",
+    "href": "about.html#contact",
+    "title": "About",
+    "section": "",
+    "text": "If you have any question about the data, please send an email to dario.sansegundo.molina@proton.me or open an Issue in the GitHub repository."
+  },
+  {
+    "objectID": "about.html#update-plan",
+    "href": "about.html#update-plan",
+    "title": "About",
+    "section": "Update Plan",
+    "text": "Update Plan\nThe CropMED dataset is intended to be updated every two years by members of the Global Change Ecology and Evolution Research group (GLOCEE) from Universidad de Alcalá. This will be done by repeating the harmonization strategy to new data as they become available in their official websites."
+  },
+  {
+    "objectID": "about.html#data-sources",
+    "href": "about.html#data-sources",
+    "title": "About",
+    "section": "Data sources",
+    "text": "Data sources\nThe data descriptor article (now under submission in a scientific journal) properly cites all data sources used to compile CropMED.\n\n\n\n\n\n\nNoteScientific Article describing the dataset:\n\n\n\nSan-Segundo Molina, D., Morales-Castilla, I. & Villén-Pérez, S. 2026. CropMED: A harmonized, fine-scale crop area dataset across administrations in Europe, the Mediterranean Basin and the Levant. Journal Information To Be Completed After Publication."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "CROPMED",
+    "section": "",
+    "text": "Macroecological forecasting of Crop-pest Phenology across Space and Time\nPronosticos macroecológicos de fenología de cultivos y plagas en el espacio y el tiempo"
+  },
+  {
+    "objectID": "qualityIndicators.html",
+    "href": "qualityIndicators.html",
+    "title": "Data Quality Indicators",
+    "section": "",
+    "text": "We assigned data quality scores to crop groups within each country across three dimensions: spatial (administrative level reached), temporal (updating periodicity of data) and taxonomic (number of unique crops reported for a crop group).\n\nSelect a country:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe image below summarizes these scores, so that any user of the dataset can easily access the usefulness and limitations of any crop and country data."
+  },
+  {
+    "objectID": "index.html#macrophest",
+    "href": "index.html#macrophest",
+    "title": "CROPMED",
+    "section": "",
+    "text": "Macroecological forecasting of Crop-pest Phenology across Space and Time\nPronosticos macroecológicos de fenología de cultivos y plagas en el espacio y el tiempo"
+  },
+  {
+    "objectID": "team.html",
+    "href": "team.html",
+    "title": "Our Team",
+    "section": "",
+    "text": "Working team\n\n\n\nIgnacio Morales Castilla\nPrincipal Investigator\n\n\nMember 1\nRole, academic status\n\n\nmember 2\nrole, academic status and affiliation.\n\n\nmember 3\nrole, academic status and affiliation.\n\n\nmember 4\nrole, academic status and affiliation.\n\n\nmember 5\nrole, academic status and affiliation.\n\n\nmember 6\nrole, academic status and affiliation.\n\n\n\nCollaboratos\n\n\n\nMercedes Uscola Fernández\nAcademic status and affiliation\n\n\netc etc\nAcademic status and affiliation"
+  },
+  {
+    "objectID": "about.html#our-main-goals",
+    "href": "about.html#our-main-goals",
+    "title": "About",
+    "section": "Our main goals:",
+    "text": "Our main goals:\nDevelop three-four questions or research areas constituting the core of MaCroPheST. Probably, the main objectives of the project."
+  },
+  {
+    "objectID": "about.html#research-dimensions",
+    "href": "about.html#research-dimensions",
+    "title": "About",
+    "section": "Research dimensions",
+    "text": "Research dimensions\n\nCrops spatial distributions and yields\nPests spatial distributions\nCrop and pest temporal distribution (phenology)\nExperimental crop and pests responses to temperature: thermal tolerance and performance\nForecasts under climate warming scenarios.\nInference pest sharing events among crops: which new pests are likely to ocurr?"
+  },
+  {
+    "objectID": "about.html#contact-form",
+    "href": "about.html#contact-form",
+    "title": "About",
+    "section": "Contact Form",
+    "text": "Contact Form\nFor anyone who wants to collaborate with the project."
+  }
+]

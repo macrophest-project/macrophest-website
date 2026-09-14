@@ -1,0 +1,72 @@
+---
+title: "Our Team"
+format: html
+css: overview.css
+---
+
+::: section-block
+# Working team
+
+:::
+
+:::::::::: stats-grid
+::: stat-box
+### Ignacio Morales Castilla
+
+Principal Investigator
+:::
+
+::: stat-box
+### Member 1
+
+Role, academic status
+:::
+
+::: stat-box
+### member 2
+
+role, academic status and affiliation.
+:::
+
+::: stat-box
+### member 3
+
+role, academic status and affiliation.
+:::
+
+::: stat-box
+### member 4
+
+role, academic status and affiliation.
+:::
+
+::: stat-box
+### member 5
+
+role, academic status and affiliation.
+:::
+
+::: stat-box
+### member 6
+
+role, academic status and affiliation.
+:::
+::::::::::
+
+::: section-block
+# Collaboratos 
+
+:::
+
+:::::::::: stats-grid
+::: stat-box
+### Mercedes Uscola Fernández
+
+Academic status and affiliation
+:::
+
+::: stat-box
+### etc etc
+
+Academic status and affiliation
+:::

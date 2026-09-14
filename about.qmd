@@ -1,0 +1,32 @@
+---
+title: "About"
+format: 
+  html:
+    code-fold: false
+    code-tools: false
+editor: visual
+---
+
+Brief description of MaCroPheST project, one paragraph.
+
+## Our main goals:
+
+Develop three-four questions or research areas constituting the core of MaCroPheST. Probably, the main objectives of the project.
+
+## Research dimensions
+
+- Crops spatial distributions and yields
+
+- Pests spatial distributions
+
+- Crop and pest temporal distribution (phenology)
+
+- Experimental crop and pests responses to temperature: thermal tolerance and performance
+
+- Forecasts under climate warming scenarios.
+
+- Inference pest sharing events among crops: which new pests are likely to ocurr?
+
+## Contact Form
+
+For anyone who wants to collaborate with the project.

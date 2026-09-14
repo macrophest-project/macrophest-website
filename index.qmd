@@ -1,0 +1,46 @@
+---
+page-layout: full
+toc: false
+css: styles.css
+body-class: home-page
+---
+
+::::: home-page
+:::: hero
+![](images/logo_uah_white.png){.hero-logo height="70px,"}
+
+::: hero-content
+## MaCroPheST
+
+\
+**Ma**croecological forecasting of **Cro**p-pest **Phe**nology across **S**pace and **T**ime
+
+Pronosticos macroecológicos de fenología de cultivos y plagas en el espacio y el tiempo
+:::
+::::
+:::::
+
+::: home-page
+
+The biological impacts of climate change will have major implications for ecosystem functioning and stability. With rising global temperatures many species are shifting geographically—moving their distributions northward and higher in altitude—and temporally—experiencing recurring life-history events, their phenology, earlier in time. These shifts have cascading effects on ecosystem services including food supply, increasingly threatened by pests that thrive under warmer conditions . In this context, accurate ecological forecasts are urgently needed for both mitigation and human adaptation to future warming.
+:::
+
+```{=html}
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const navbar = document.querySelector(".navbar");
+  const hero = document.querySelector(".hero");
+  if (!navbar || !hero) return;
+
+  const heroHeight = hero.offsetHeight;
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > heroHeight - 80) {
+      navbar.classList.add("scrolled");
+    } else {
+      navbar.classList.remove("scrolled");
+    }
+  });
+});
+</script>
+```
