@@ -12,11 +12,9 @@ css:
 
 ::: {.hero-content}
 
-## MaCroPheST
+## MaCroPheST LAB
 
 **Ma**croecological forecasting of **Cro**p-pest **Phe**nology across **S**pace and **T**ime
-
-Pronosticos macroecológicos de fenología de cultivos y plagas en el espacio y el tiempo
 
 :::
 :::

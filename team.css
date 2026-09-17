@@ -352,7 +352,7 @@ details.pi-details a:hover {
 
 /* Estado al hacer scroll */
 .navbar {
-  background-color: var(--color-ember) !important; 
+  background-color: var(--color-forest) !important; 
   box-shadow: 0 2px 8px var(--color-ink);
   padding-top: 0.15rem;
   padding-bottom: 0.15rem;
@@ -360,13 +360,13 @@ details.pi-details a:hover {
 
 .navbar.scrolled {
   position: fixed;
-  background-color: var(--color-ember) !important; 
+  background-color: var(--color-forest) !important; 
   box-shadow: 0 2px 8px var(--color-ink);
   padding-top: 0.15rem;
   padding-bottom: 0.15rem;
 }
 
 .navbar.scrolled {
-  background-color: var(--color-ember) !important;
+  background-color: var(--color-forest) !important;
   box-shadow: 0 2px 8px var(--color-ink);
 }

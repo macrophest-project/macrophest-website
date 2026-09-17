@@ -56,25 +56,46 @@
     "text": "Exploring the sharing of pests among different crop species from a probabilistic framework based on spatial and temporal forecasted co-occurrences."
   },
   {
-    "objectID": "news-article-template.html",
-    "href": "news-article-template.html",
+    "objectID": "news-article-1.html",
+    "href": "news-article-1.html",
     "title": "News article title",
     "section": "",
     "text": "News article title\n\n\n15 enero 2025\n\n\n\n\nCuerpo de la noticia, en párrafos normales. Reutiliza el mismo ancho de columna y tipografía que las páginas de proyecto para que se lea igual en todo el sitio."
+  },
+  {
+    "objectID": "download.html",
+    "href": "download.html",
+    "title": "Download files",
+    "section": "",
+    "text": "TipRecommendation\n\n\n\nBy default, we suggest downloading the .csv file. If the user aims to use CropMED for spatial analysis under GIS workflows, we suggest downloading the .gpkg version"
+  },
+  {
+    "objectID": "download.html#download-links",
+    "href": "download.html#download-links",
+    "title": "Download files",
+    "section": "Download links",
+    "text": "Download links\n\nDownload the main dataset (Comma-Separated Values file) (7.2 MB)\nDownload the geographic dataset (GeoPackage file) (642.5MB)"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "Contact\n\n\nMail: ignacio.moralesc@uah.es\n\n\nBluesky macrophest-lab"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Project overview",
     "section": "",
-    "text": "Macroecological forecasting of Crop-pest Phenology across Space and Time\nPronosticos macroecológicos de fenología de cultivos y plagas en el espacio y el tiempo"
+    "text": "Macroecological forecasting of Crop-pest Phenology across Space and Time"
   },
   {
-    "objectID": "index.html#macrophest",
-    "href": "index.html#macrophest",
+    "objectID": "index.html#macrophest-lab",
+    "href": "index.html#macrophest-lab",
     "title": "Project overview",
     "section": "",
-    "text": "Macroecological forecasting of Crop-pest Phenology across Space and Time\nPronosticos macroecológicos de fenología de cultivos y plagas en el espacio y el tiempo"
+    "text": "Macroecological forecasting of Crop-pest Phenology across Space and Time"
   },
   {
     "objectID": "index.html#research-lines",
@@ -117,34 +138,6 @@
     "title": "Project overview",
     "section": "News",
     "text": "News\nLatest news and updates from the group.\nSee all news →"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "Contact\n\n\nMail: ignacio.moralesc@uah.es\n\n\nBluesky macrophest-lab"
-  },
-  {
-    "objectID": "download.html",
-    "href": "download.html",
-    "title": "Download files",
-    "section": "",
-    "text": "TipRecommendation\n\n\n\nBy default, we suggest downloading the .csv file. If the user aims to use CropMED for spatial analysis under GIS workflows, we suggest downloading the .gpkg version"
-  },
-  {
-    "objectID": "download.html#download-links",
-    "href": "download.html#download-links",
-    "title": "Download files",
-    "section": "Download links",
-    "text": "Download links\n\nDownload the main dataset (Comma-Separated Values file) (7.2 MB)\nDownload the geographic dataset (GeoPackage file) (642.5MB)"
-  },
-  {
-    "objectID": "linea1.html",
-    "href": "linea1.html",
-    "title": "Research line name",
-    "section": "",
-    "text": "Forecasting crop-pest distributions\n\n\n\nMelon Fly (Zeugodacus cucurbitae), photo by Scott Bauer, USDA Agricultural Research Service, Bugwood.org\n\n\nOne-line tagline for this research line\n\n\nÁrea: Ecología térmica / macroecología\n\n\n\n\nLead paragraph: what this research line focuses on and why it matters.\nSecond paragraph: methods, models, or data sources involved.\nThird paragraph: related projects or publications, with links."
   },
   {
     "objectID": "news.html",

@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  title: "MACROPHEST"
+  title: "MACROPHEST-LAB"
   navbar:
     left:
       - text: Home
