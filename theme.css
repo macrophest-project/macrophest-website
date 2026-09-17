@@ -165,6 +165,7 @@ a {
 
 a:hover {
   color: var(--color-ember);
+  text-decoration: none;
 }
 
 a:focus-visible,

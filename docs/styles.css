@@ -336,7 +336,7 @@ a {
 
 a:hover {
   color: inherit !important;
-  text-decoration: underline !important;
+  text-decoration: none !important;
 }
 
 .home-page .home-research-card h2 {
