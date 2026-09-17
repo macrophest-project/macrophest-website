@@ -1,0 +1,17 @@
+---
+title: "News article title"
+format: html
+css: [theme.css, project.css]
+---
+
+:::: project-hero
+# News article title
+
+::: project-meta
+- 15 enero 2025
+:::
+::::
+
+::: project-body
+Cuerpo de la noticia, en párrafos normales. Reutiliza el mismo ancho de columna y tipografía que las páginas de proyecto para que se lea igual en todo el sitio.
+:::
