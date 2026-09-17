@@ -1,0 +1,350 @@
+/* ============================================================
+   HERO
+   ============================================================ */
+
+.hero {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  margin-top: -80px;
+  height: calc(100vh + 68px);
+
+  background-image: linear-gradient(rgba(2, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+                     url("images/peaches.jpg");
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-content {
+  color: #F7F0E4;
+  max-width: 700px;
+  padding: 2rem;
+}
+
+.hero-content h1,
+.hero-content h2,
+.hero-content h3,
+.hero-content h4 {
+  color: var(--color-sand) !important;
+}
+
+.hero-content h2.anchored,
+.hero-content h2 {
+  border-bottom: none !important;
+  padding-bottom: 0 !important;
+}
+
+.hero-logo {
+  position: absolute;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  height: 60px;
+  width: auto;
+  z-index: 5;
+}
+
+/* ============================================================
+   NAVBAR — 
+   ============================================================ */
+
+body.home-page #quarto-header {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: transparent !important;
+  z-index: 10;
+}
+
+body,
+.page-columns,
+main {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent !important;
+  background: transparent !important;
+  box-shadow: none;
+  border-color: transparent !important;
+  z-index: 10;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.navbar .nav-link,
+.navbar-brand,
+.navbar-title {
+  color: var(--color-sand) !important;
+  transition: color 0.3s ease;
+}
+
+/* Estado al hacer scroll */
+.navbar.scrolled {
+  position: fixed;
+  background-color: var(--color-forest) !important;
+  box-shadow: 0 2px 8px var(--color-ink);
+  padding-top: 0.15rem;
+  padding-bottom: 0.15rem;
+}
+
+/* Anula el auto-hide de headroom.js: el header nunca debe desplazarse */
+body.home-page #quarto-header {
+  transform: none !important;
+}
+
+body.home-page #quarto-header.scrolled {
+  position: fixed !important;
+  background-color: var(--color-forest) !important;
+  box-shadow: 0 2px 8px var(--color-ink);
+}
+
+body.home-page #quarto-header.scrolled .navbar,
+body.home-page #quarto-header.scrolled .navbar-container {
+  background: transparent !important; /* que no tape el naranja del header */
+}
+
+
+/* ============================================================
+   INTRO SECTION
+   ============================================================ */
+
+.home-page .intro-section {
+  width: 100vw;
+  max-width: none;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+
+  padding: clamp(5rem, 8vw, 8rem)
+           max(1.5rem, calc((100vw - var(--content-max)) / 2));
+
+  background: #fffdfa;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  backdrop-filter: none;
+}
+
+.home-page .intro-section h3,
+.home-page .intro-section p {
+  max-width: 70ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.home-page .intro-section h3 {
+  margin-bottom: 1.25rem;
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-teal);
+}
+
+.home-page .intro-section p {
+  font-size: 1.05rem;
+  line-height: 1.9;
+  color: var(--color-ink);
+}
+
+.home-page {
+  font-family: var(--font-body);
+  color: var(--color-ink);
+}
+
+/* ============================================================
+   RESEARCH LINES BAND
+   ============================================================ */
+
+.home-page .home-research-band {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+
+  padding: clamp(5rem, 8vw, 8rem)
+           max(1.5rem, calc((100vw - var(--content-max)) / 2));
+
+  background: var(--color-sand);
+}
+
+.home-page .home-research-band > h2,
+.home-page .home-research-band > p {
+  max-width: var(--content-max);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.home-page .home-research-band > h2 {
+  color: var(--color-forest);
+}
+
+.home-page .home-research-band > p {
+  color: var(--text-muted);
+}
+
+.home-page .home-research-band .home-band-cta {
+  display: inline-block;
+  margin-top: 1rem;
+  color: var(--color-forest);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* ============================================================
+   RESEARCH GRID / CARD / AVATAR
+   (nombres iguales a los que usa index.qmd)
+   ============================================================ */
+
+.home-page .home-research-grid {
+  max-width: var(--content-max);
+  margin: 3rem auto 0;
+  padding: 0;
+
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.15rem;
+}
+
+@media (max-width: 1100px) {
+  .home-page .home-research-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .home-page .home-research-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.home-page .home-research-card {
+  position: relative;
+  min-height: 320px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 2rem 1.4rem 1.7rem;
+
+  background: var(--surface-card);
+  border: 1px solid var(--surface-card-border);
+  border-top: 3px solid var(--color-forest);
+  border-radius: var(--radius);
+
+  box-shadow: var(--shadow-card);
+  text-align: center;
+
+  transition: transform 220ms ease, box-shadow 220ms ease;
+}
+
+.home-page .home-research-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-hover);
+}
+
+.home-page .home-research-avatar {
+  width: 7.5rem;
+  height: 7.5rem;
+  flex: 0 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0 auto 1.5rem;
+
+  overflow: hidden;
+  border-radius: 50%;
+  border: 1px solid rgba(60, 119, 81, 0.18);
+
+  background: linear-gradient(145deg, var(--color-teal), var(--color-coral));
+  box-shadow: 0 0 0 8px rgba(60, 119, 81, 0.05);
+}
+
+.home-page .home-research-avatar img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ============================================================
+   NEWS BAND
+   ============================================================ */
+
+.home-page .home-news-band {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+
+  padding: clamp(5rem, 8vw, 8rem)
+           max(1.5rem, calc((100vw - var(--content-max)) / 2));
+
+  background: var(--color-ink);
+  color: var(--color-sand);
+}
+
+.home-page .home-news-band h2 {
+  max-width: var(--content-max);
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--color-coral);
+}
+
+.home-page .home-news-band p {
+  max-width: var(--content-max);
+  margin-left: auto;
+  margin-right: auto;
+  color: rgba(247, 240, 228, 0.7);
+}
+
+.home-page .home-news-band a {
+  color: var(--color-coral);
+}
+/* Navbar al hacer scroll */
+body.home-page #quarto-header.scrolled,
+body.home-page #quarto-header.scrolled .navbar,
+body.home-page #quarto-header.scrolled .navbar-container,
+body.home-page #quarto-header.scrolled .navbar-collapse {
+  background: var(--color-forest) !important;
+  background-color: var(--color-forest) !important;
+}
+
+/* ============================================================
+   ENLACES — mantener el formato del texto
+   ============================================================ */
+
+a {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+a:hover {
+  color: inherit !important;
+  text-decoration: underline !important;
+}
+
+.home-page .home-research-card h2 {
+  min-height: 4.5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0 0 0.75rem;
+}
