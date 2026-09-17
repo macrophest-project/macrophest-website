@@ -2,13 +2,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.22">
+<meta name="generator" content="quarto-1.9.38">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>CROPMED</title>
+<title>MACROPHEST</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -36,10 +39,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b4406b7675125bc2ba204020e191172.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-fad3cae62132c7ef98dd26b9162467b3.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-c51defa157ccb18095ba4b35bf459923.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -81,7 +84,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">CROPMED</span>
+    <span class="navbar-title">MACROPHEST</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -94,36 +97,48 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link active" href="./index.html" aria-current="page"> 
 <span class="menu-text">Home</span></a>
   </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-research-lines" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Research lines</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-research-lines">    
+        <li>
+    <a class="dropdown-item" href="./projects.html">
+ <span class="dropdown-text">Overview</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./research_data.html">
+ <span class="dropdown-text">Data science</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./research_thermal.html">
+ <span class="dropdown-text">Thermal tolerance and performance</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./research_forecast.html">
+ <span class="dropdown-text">Spatial and temporal forecasts</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./research_networks.html">
+ <span class="dropdown-text">Interaction networks</span></a>
+  </li>  
+    </ul>
+  </li>
   <li class="nav-item">
-    <a class="nav-link" href="./overview.qmd"> 
-<span class="menu-text">Overview</span></a>
+    <a class="nav-link" href="./team.html"> 
+<span class="menu-text">Team</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./visualizer.html"> 
-<span class="menu-text">Visualize data</span></a>
+    <a class="nav-link" href="./publications.html"> 
+<span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./qualityIndicators.html"> 
-<span class="menu-text">Data Quality Indicators</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./download.html"> 
-<span class="menu-text">Download</span></a>
+    <a class="nav-link" href="./news.html"> 
+<span class="menu-text">News</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./about.html"> 
 <span class="menu-text">About</span></a>
-  </li>  
-</ul>
-            <ul class="navbar-nav navbar-nav-scroll ms-auto">
-  <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/cropmed-project/CropMED"> <i class="bi bi-github" role="img">
-</i> 
-<span class="menu-text"></span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="https://doi.org/10.5281/zenodo.21672597"> 
-<span class="menu-text"><img src="icons/zenodo-white.svg" width="112" height="16" alt="Zenodo" style="vertical-align: middle;"></span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -143,40 +158,94 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<div class="home-page">
 <div class="hero">
-<p><img src="images/logo_uah_white.png" class="hero-logo"></p>
+<p><img src="images/logo_uah_white.png" class="hero-logo" height="70"></p>
 <section id="macrophest" class="level2 hero-content">
 <h2 class="anchored" data-anchor-id="macrophest">MaCroPheST</h2>
-<p><br>
-<strong>Ma</strong>croecological forecasting of <strong>Cro</strong>p-pest <strong>Phe</strong>nology across <strong>S</strong>pace and <strong>T</strong>ime</p>
+<p><strong>Ma</strong>croecological forecasting of <strong>Cro</strong>p-pest <strong>Phe</strong>nology across <strong>S</strong>pace and <strong>T</strong>ime</p>
 <p>Pronosticos macroecológicos de fenología de cultivos y plagas en el espacio y el tiempo</p>
 </section>
 </div>
-</div>
-<section id="project-overview" class="level3 intro-section">
-<h3 class="anchored" data-anchor-id="project-overview">Project overview</h3>
+<section id="project-overview" class="level1 intro-section">
+<h1>Project overview</h1>
 <p>The biological impacts of climate change will have major implications for ecosystem functioning and stability. With rising global temperatures many species are shifting geographically, moving their distributions northward and higher in altitude, and temporally, experiencing recurring life-history events earlier in time.</p>
 <p>These shifts have cascading effects on ecosystem services including food supply, increasingly threatened by pests that thrive under warmer conditions.</p>
 <p>In this context, accurate ecological forecasts are urgently needed for both mitigation and human adaptation to future warming.</p>
 </section>
 <script>
 document.addEventListener("DOMContentLoaded", () => {
+  document.body.classList.add("home-page");
+
   const navbar = document.querySelector(".navbar");
   const hero = document.querySelector(".hero");
+  const header = document.querySelector("#quarto-header");
+
   if (!navbar || !hero) return;
 
   const heroHeight = hero.offsetHeight;
 
   window.addEventListener("scroll", () => {
-    if (window.scrollY > heroHeight - 80) {
-      navbar.classList.add("scrolled");
-    } else {
-      navbar.classList.remove("scrolled");
+    if (header) {
+      header.classList.remove("headroom--unpinned");
+      header.style.setProperty("transform", "none", "important");
+      header.style.setProperty("top", "0px", "important");
     }
+
+    const isScrolled = window.scrollY > heroHeight - 80;
+
+    navbar.classList.toggle("scrolled", isScrolled);
+    if (header) header.classList.toggle("scrolled", isScrolled);
   });
 });
 </script>
+<section id="research-lines" class="level2 home-research-band">
+<h2 class="anchored" data-anchor-id="research-lines">Research lines</h2>
+<p>Four complementary research lines combining thermal biology, macroecology, and pest forecasting.</p>
+<div class="home-research-grid">
+<div class="home-research-card">
+<div class="home-research-avatar">
+<p><img src="images/Melon_fly_(Bactrocera_cucurbitae).jpg" class="img-fluid"></p>
+</div>
+<section id="data-science" class="level2">
+<h2 class="anchored" data-anchor-id="data-science"><a href="./research_data.html" class="stretched-link">Data science</a></h2>
+<p>Our group compiles published data on distribution and thermal biology of fruit crops and their insect pests.</p>
+</section>
+</div>
+<div class="home-research-card">
+<div class="home-research-avatar">
+<p><img src="images/exper.jpeg" class="img-fluid"></p>
+</div>
+<section id="thermal-tolerance-and-performance" class="level2">
+<h2 class="anchored" data-anchor-id="thermal-tolerance-and-performance"><a href="./research_thermal.html" class="stretched-link">Thermal tolerance and performance</a></h2>
+<p>We carry out experiments in the lab to experimentally determine the thermal tolerance of multiple fruit crop species and varieties.</p>
+</section>
+</div>
+<div class="home-research-card">
+<div class="home-research-avatar">
+<p><img src="images/crops_curves.png" class="img-fluid"></p>
+</div>
+<section id="forecasting" class="level2">
+<h2 class="anchored" data-anchor-id="forecasting"><a href="./research_forecast.html" class="stretched-link">Forecasting</a></h2>
+<p>We use physiological data from the literature and from our experiments to predict the spatial and temporal patterns of fruit trees and their pests.</p>
+</section>
+</div>
+<div class="home-research-card">
+<div class="home-research-avatar">
+<p><img src="images/prob_coc.png" class="img-fluid"></p>
+</div>
+<section id="interaction-networks" class="level2">
+<h2 class="anchored" data-anchor-id="interaction-networks"><a href="./research_networks.html" class="stretched-link">Interaction networks</a></h2>
+<p>Exploring the sharing of pests among different crop species from a probabilistic framework based on spatial and temporal forecasted co-occurrences.</p>
+</section>
+</div>
+<p><a href="./projects.html" class="home-band-cta">See all research lines →</a></p>
+</div>
+</section>
+<section id="news" class="level2 home-news-band">
+<h2 class="anchored" data-anchor-id="news">News</h2>
+<p>Latest news and updates from the group.</p>
+<p><a href="./news.html" class="home-hero-link">See all news →</a></p>
+</section>
 
 
 
@@ -239,13 +308,14 @@ document.addEventListener("DOMContentLoaded", () => {
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy

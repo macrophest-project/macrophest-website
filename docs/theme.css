@@ -145,11 +145,12 @@ h4 {
   font-weight: 600;
   line-height: 1.1;
   letter-spacing: -0.025em;
-  color: var(--color-forest);
+  color: var(--color-ember);
 }
 
 h1 {
   letter-spacing: -0.04em;
+  color: var(--color-forest);
 }
 
 a {
@@ -269,7 +270,7 @@ button:focus-visible {
 
   height: 2px;
 
-  background: var(--color-ember);
+  background: var(--color-coral);
 
   border-radius: 999px;
 }
@@ -332,4 +333,53 @@ button:focus-visible {
   color: var(--text-muted);
 }
 
+/* Stretched-link: put this class on the ONE real link inside a card
+   (usually the heading link) and give the card `position: relative`.
+   The link's visible text stays exactly where it is; this pseudo-
+   element stretches over the whole card so clicking anywhere on it
+   follows that same link. Keyboard/screen-reader users still get one
+   meaningful link (the heading text), not an invisible click-trap. */
+.stretched-link::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
 
+/* ============================================================
+   NAVBAR — RESEARCH LINES
+   ============================================================ */
+
+/* Botón "Research lines" */
+.navbar .dropdown-toggle:hover,
+.navbar .dropdown-toggle:focus,
+.navbar .dropdown-toggle.show {
+  background-color: var(--color-forest) !important;
+  color: white !important;
+  border-radius: 6px;
+}
+
+
+/* Menú desplegable */
+.navbar .dropdown-menu {
+  border: 1px solid var(--surface-card-border);
+  box-shadow: var(--shadow-card);
+  border-radius: 8px;
+  padding: 0.4rem;
+}
+
+
+/* Opciones del menú */
+.navbar .dropdown-menu .dropdown-item:hover,
+.navbar .dropdown-menu .dropdown-item:focus {
+  background-color: var(--color-coral) !important;
+  color: var(--color-sand) !important;
+  border-radius: 5px;
+}
+
+
+/* Página activa dentro de Research lines */
+.navbar .dropdown-menu .dropdown-item.active {
+  background-color: var(--color-forest) !important;
+  color: var(--color-sand) !important;
+}

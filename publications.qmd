@@ -1,0 +1,33 @@
+---
+title: "Publications"
+format: html
+css: [theme.css, publications.css]
+---
+
+# Selected Articles
+
+::::::: team-list
+::: team-row
+</span>**Ignacio Morales-Castilla**, TJ Davies, Geoffrey Legault, DM Buonaiuto, Catherine J Chamberlain, Ailene K Ettinger, Mira Garner, Faith AM Jones, Deirdre Loughnan, William D Pearse, Darwin S Sodhi, EM Wolkovich. 2024</span>. Phylogenetic estimates of species-level phenology improve ecological forecasting. *Nature Climate Change*, 14: 989-995.
+
+#### Available [here](https://www.nature.com/articles/s41558-024-02102-2).
+:::
+
+::: team-row
+</span>EM Wolkovich, Benjamin I Cook, Iñaki García de Cortázar-Atauri, Victor Van der Meersch, Thierry Lacombe, Cécile Marchal, **Ignacio Morales-Castilla**. 2022</span>. Uneven impacts of climate change around the world and across the annual cycle of winegrapes. *PLOS Climate*, 4: e0000539.
+
+#### Available [here](https://journals.plos.org/climate/article?id=10.1371/journal.pclm.00005398).
+:::
+
+::: team-row
+</span>Jennifer Sunday, Joanne M Bennett, Piero Calosi, Susana Clusella-Trullas, Sarah Gravel, Anna L Hargreaves, Félix P Leiva, Wilco CEP Verberk, Miguel Ángel Olalla-Tárraga, **Ignacio Morales-Castilla**. 2019</span>. Thermal tolerance patterns across latitude and elevation. *Philosophical Transactions of the Royal Society B: Biological Sciences*, 374: 20190036.
+
+#### Available [here](https://royalsocietypublishing.org/rstb/article/374/1778/20190036/30455/Thermal-tolerance-patterns-across-latitude-and).
+:::
+
+::: team-row
+</span>**Ignacio Morales-Castilla**, Miguel G Matias, Dominique Gravel, Miguel B Araújo, 2015</span>. Inferring biotic interactions from proxies. *Trends in Ecology & Evolution*, 30: 347-356.
+
+etc
+:::
+:::::::

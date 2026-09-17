@@ -1,0 +1,49 @@
+---
+title: "Research lines"
+format: html
+css: [theme.css, projects.css]
+---
+
+# Ongoing Research projects
+
+::::::::::: project-grid
+:::: project-card
+::: avatar
+![](images/Melon_fly_(Bactrocera_cucurbitae).jpg)
+:::
+
+## [Data science](research_data.qmd){.stretched-link}
+
+Our group compiles published data on distribution and thermal biology of fruit crops and their insect pests.
+::::
+
+:::: project-card
+::: avatar
+![](images/exper.jpeg)
+:::
+
+## [Thermal tolerance and performance](research_thermal.qmd){.stretched-link}
+
+We carry out experiments in the lab to experimentally determine the thermal tolerance of multiple fruit crop species and varieties.
+::::
+
+:::: project-card
+::: avatar
+![](images/crops_curves.png)
+:::
+
+## [Forecasting](research_forecast.qmd){.stretched-link}
+
+We use physiological data from the literature and from our experiments to predict the spatial (distribution) and temporal (phenology) patterns of both fruit tree species and their pests.
+::::
+
+:::: project-card
+::: avatar
+![](images/prob_coc.png)
+:::
+
+## [Interaction networks](research_networks.qmd){.stretched-link}
+
+Exploring the sharing of pests among different crop species from a probabilistic framework based on spatial and temporal forecasted co-occurrences.
+::::
+:::::::::::

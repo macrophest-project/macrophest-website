@@ -1,0 +1,40 @@
+/* --- Collaborators: quieter list, not another card grid --- */
+.team-list {
+  max-width: var(--content-max);
+  margin: 0 auto 4rem;
+  padding: 0 1.5rem;
+}
+ 
+.team-row {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  padding: 0.7rem 0;
+  border-bottom: 1px solid var(--surface-card-border);
+}
+ 
+.team-row::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  flex-shrink: 0;
+  background: var(--color-teal);
+  border-radius: 1px;
+}
+ 
+.team-row strong { color: var(--color-ink); }
+.team-row span { color: var(--text-muted); font-size: 0.95rem; }
+
+/* Estado al hacer scroll */
+
+.navbar,
+.navbar.scrolled {
+  background-color: var(--color-forest) !important;
+  box-shadow: 0 2px 8px var(--color-ink);
+  padding-top: 0.15rem;
+  padding-bottom: 0.15rem;
+}
+
+.navbar.scrolled {
+  position: fixed;
+}

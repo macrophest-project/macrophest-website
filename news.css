@@ -1,0 +1,72 @@
+/* ============================================================
+   NEWS LISTING PAGE
+   Depends on theme.css being loaded first.
+   ============================================================ */
+
+.news-list {
+  max-width: var(--content-max);
+  margin: 0 auto 4rem;
+  padding: 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.news-item {
+  position: relative;
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 1.25rem;
+  background: var(--surface-card);
+  border: 1px solid var(--surface-card-border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.news-item img { width: 100%; height: 100%; object-fit: cover; }
+
+.news-item-body { padding: 1.1rem 1.3rem 1.1rem 0; }
+
+.news-date {
+  font-size: 0.8rem;
+  color: var(--color-teal);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.news-item h3 { margin: 0.3rem 0 0.4rem; font-size: 1.15rem; }
+.news-item h3 a { color: var(--color-ink); text-decoration: none; }
+.news-item h3 a:hover { color: var(--color-ember); }
+
+.news-item p { margin: 0 0 0.6rem; color: var(--text-muted); font-size: 0.92rem; }
+
+.news-read-more {
+  position: relative;
+  z-index: 2; /* stay clickable above the card's stretched-link overlay */
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-teal);
+  text-decoration: none;
+}
+.news-read-more:hover { color: var(--color-ember); }
+
+@media (max-width: 560px) {
+  .news-item { grid-template-columns: 1fr; }
+  .news-item img { height: 160px; }
+  .news-item-body { padding: 1rem 1.1rem; }
+}
+
+/* Estado al hacer scroll */
+
+.navbar,
+.navbar.scrolled {
+  background-color: var(--color-forest) !important;
+  box-shadow: 0 2px 8px var(--color-ink);
+  padding-top: 0.15rem;
+  padding-bottom: 0.15rem;
+}
+
+.navbar.scrolled {
+  position: fixed;
+}

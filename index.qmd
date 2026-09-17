@@ -4,27 +4,27 @@ toc: false
 css:
   - theme.css
   - styles.css
-body-class: home-page
 ---
 
-::::: home-page
-:::: hero
-![](images/logo_uah_white.png){.hero-logo height="70px,"}
+::: {.hero}
 
-::: hero-content
+![](images/logo_uah_white.png){.hero-logo height="70px"}
+
+::: {.hero-content}
+
 ## MaCroPheST
 
-\
 **Ma**croecological forecasting of **Cro**p-pest **Phe**nology across **S**pace and **T**ime
 
 Pronosticos macroecológicos de fenología de cultivos y plagas en el espacio y el tiempo
+
 :::
-::::
-:::::
+:::
+
 
 ::: {.intro-section}
 
-### Project overview
+# Project overview
 
 The biological impacts of climate change will have major implications for ecosystem functioning and stability. With rising global temperatures many species are shifting geographically, moving their distributions northward and higher in altitude, and temporally, experiencing recurring life-history events earlier in time.
 
@@ -33,23 +33,90 @@ These shifts have cascading effects on ecosystem services including food supply,
 In this context, accurate ecological forecasts are urgently needed for both mitigation and human adaptation to future warming.
 
 :::
-  
-```{=html}
+
 <script>
 document.addEventListener("DOMContentLoaded", () => {
+  document.body.classList.add("home-page");
+
   const navbar = document.querySelector(".navbar");
   const hero = document.querySelector(".hero");
+  const header = document.querySelector("#quarto-header");
+
   if (!navbar || !hero) return;
 
   const heroHeight = hero.offsetHeight;
 
   window.addEventListener("scroll", () => {
-    if (window.scrollY > heroHeight - 80) {
-      navbar.classList.add("scrolled");
-    } else {
-      navbar.classList.remove("scrolled");
+    if (header) {
+      header.classList.remove("headroom--unpinned");
+      header.style.setProperty("transform", "none", "important");
+      header.style.setProperty("top", "0px", "important");
     }
+
+    const isScrolled = window.scrollY > heroHeight - 80;
+
+    navbar.classList.toggle("scrolled", isScrolled);
+    if (header) header.classList.toggle("scrolled", isScrolled);
   });
 });
 </script>
-```
+
+::: {.home-research-band}
+## Research lines
+
+Four complementary research lines combining thermal biology, macroecology, and pest forecasting.
+
+::: {.home-research-grid}
+
+::: {.home-research-card}
+
+::: {.home-research-avatar}
+![](images/Melon_fly_(Bactrocera_cucurbitae).jpg)
+:::
+## [Data science](research_data.qmd){.stretched-link}
+
+Our group compiles published data on distribution and thermal biology of fruit crops and their insect pests.
+:::
+
+
+::: {.home-research-card}
+::: {.home-research-avatar}
+![](images/exper.jpeg)
+:::
+## [Thermal tolerance and performance](research_thermal.qmd){.stretched-link}
+
+We carry out experiments in the lab to experimentally determine the thermal tolerance of multiple fruit crop species and varieties.
+:::
+
+::: {.home-research-card}
+::: {.home-research-avatar}
+![](images/crops_curves.png)
+:::
+
+## [Forecasting](research_forecast.qmd){.stretched-link}
+
+We use physiological data from the literature and from our experiments to predict the spatial and temporal patterns of fruit trees and their pests.
+:::
+
+
+::: {.home-research-card}
+::: {.home-research-avatar}
+![](images/prob_coc.png)
+:::
+
+## [Interaction networks](research_networks.qmd){.stretched-link}
+
+Exploring the sharing of pests among different crop species from a probabilistic framework based on spatial and temporal forecasted co-occurrences.
+:::
+
+[See all research lines →](projects.qmd){.home-band-cta}
+:::
+:::
+
+::: {.home-news-band}
+## News
+
+Latest news and updates from the group.
+
+[See all news →](news.qmd){.home-hero-link}
+:::

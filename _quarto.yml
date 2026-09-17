@@ -3,31 +3,36 @@ project:
   output-dir: docs
 
 website:
-  title: "CROPMED"
+  title: "MACROPHEST"
   navbar:
     left:
-      - href: index.qmd
-        text: Home
-      - href: overview.qmd
-        text: Overview
-      - href: visualizer.qmd
-        text: Visualize data
-      - href: qualityIndicators.qmd
-        text: Data Quality Indicators        
-      - href: download.qmd
-        text: Download
-      - href: about.qmd
-        text: About
-    right:
-      - icon: github
-        href: https://github.com/cropmed-project/CropMED
-      - text: '<img src="icons/zenodo-white.svg" width="112" height="16" alt="Zenodo" style="vertical-align: middle;">'
-        href: https://doi.org/10.5281/zenodo.21672597
-  page-navigation: true
+      - text: Home
+        href: index.qmd
+      - text: Research lines
+        menu:
+        - text: "Overview"
+          href: projects.qmd
+        - text: "Data science"
+          href: research_data.qmd
+        - text: "Thermal tolerance and performance"
+          href: research_thermal.qmd
+        - text: "Spatial and temporal forecasts"
+          href: research_forecast.qmd
+        - text: "Interaction networks"
+          href: research_networks.qmd
+      - text: Team
+        href: team.qmd
+      - text: Publications
+        href: publications.qmd
+      - text: News
+        href: news.qmd
+      - text: About
+        href: about.qmd
+    page-navigation: true
 format:
   html:
     theme: sandstone
-    toc: true
+    toc: false
     include-after-body: footer.html
 
 editor: visual

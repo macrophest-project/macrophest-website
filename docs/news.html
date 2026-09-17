@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Download files – MACROPHEST</title>
+<title>News – MACROPHEST</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -72,6 +72,8 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
+<link rel="stylesheet" href="theme.css">
+<link rel="stylesheet" href="news.css">
 </head>
 
 <body class="nav-fixed fullcontent quarto-light">
@@ -131,7 +133,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./news.html"> 
+    <a class="nav-link active" href="./news.html" aria-current="page"> 
 <span class="menu-text">News</span></a>
   </li>  
   <li class="nav-item">
@@ -155,7 +157,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Download files</h1>
+<h1 class="title">News</h1>
 </div>
 
 
@@ -172,28 +174,35 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>Recommendation
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>By default, we suggest downloading the <em>.csv</em> file. If the user aims to use <em>CropMED</em> for spatial analysis under GIS workflows, we suggest downloading the <em>.gpkg</em> version</p>
-</div>
-</div>
-<section id="download-links" class="level2">
-<h2 class="anchored" data-anchor-id="download-links">Download links</h2>
-<ul>
-<li><p><a href="https://zenodo.org/records/21672597/files/CropMED_dataset.csv?download=1">Download the main dataset (<em>Comma-Separated Values</em> file)</a> (7.2 MB)</p></li>
-<li><p><a href="https://zenodo.org/records/21672597/files/CropMED_dataset_geoms.gpkg?download=1">Download the geographic dataset (<em>GeoPackage</em> file)</a> (642.5MB)</p></li>
-</ul>
-
-
+<section id="news" class="level1 section-block">
+<h1>News</h1>
 </section>
+<div class="news-list">
+<div class="news-item">
+<p><img src="images/news/2025-01-example.jpg" class="img-fluid"></p>
+<div class="news-item-body">
+<p><span class="news-date">15 enero 2025</span></p>
+<section id="título-de-la-primera-noticia" class="level3">
+<h3 class="anchored" data-anchor-id="título-de-la-primera-noticia"><a href="news-article-1.qmd" class="stretched-link">Título de la primera noticia</a></h3>
+<p>Breve descripción de una o dos frases sobre la noticia.</p>
+<p><a href="news-article-1.qmd" class="news-read-more">Leer completo →</a></p>
+</section>
+</div>
+</div>
+<div class="news-item">
+<p><img src="images/news/2024-12-example.jpg" class="img-fluid"></p>
+<div class="news-item-body">
+<p><span class="news-date">3 diciembre 2024</span></p>
+<section id="título-de-la-segunda-noticia" class="level3">
+<h3 class="anchored" data-anchor-id="título-de-la-segunda-noticia"><a href="news-article-2.qmd" class="stretched-link">Título de la segunda noticia</a></h3>
+<p>Breve descripción de una o dos frases sobre la noticia.</p>
+<p><a href="news-article-2.qmd" class="news-read-more">Leer completo →</a></p>
+</section>
+</div>
+</div>
+</div>
+
+
 
 </main> <!-- /main -->
 <footer style="text-align:center; padding:1.5rem 0; display:flex; justify-content:center; align-items:center; gap:2rem;">

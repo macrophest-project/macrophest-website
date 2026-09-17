@@ -2,13 +2,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.22">
+<meta name="generator" content="quarto-1.9.38">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>About – CROPMED</title>
+<title>About – MACROPHEST</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -36,10 +39,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b4406b7675125bc2ba204020e191172.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-fad3cae62132c7ef98dd26b9162467b3.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-c51defa157ccb18095ba4b35bf459923.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -69,9 +72,11 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
+<link rel="stylesheet" href="theme.css">
+<link rel="stylesheet" href="publications.css">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -79,7 +84,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">CROPMED</span>
+    <span class="navbar-title">MACROPHEST</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -92,36 +97,48 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-research-lines" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Research lines</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-research-lines">    
+        <li>
+    <a class="dropdown-item" href="./projects.html">
+ <span class="dropdown-text">Overview</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./research_data.html">
+ <span class="dropdown-text">Data science</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./research_thermal.html">
+ <span class="dropdown-text">Thermal tolerance and performance</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./research_forecast.html">
+ <span class="dropdown-text">Spatial and temporal forecasts</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./research_networks.html">
+ <span class="dropdown-text">Interaction networks</span></a>
+  </li>  
+    </ul>
+  </li>
   <li class="nav-item">
-    <a class="nav-link" href="./overview.qmd"> 
-<span class="menu-text">Overview</span></a>
+    <a class="nav-link" href="./team.html"> 
+<span class="menu-text">Team</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./visualizer.html"> 
-<span class="menu-text">Visualize data</span></a>
+    <a class="nav-link" href="./publications.html"> 
+<span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./qualityIndicators.html"> 
-<span class="menu-text">Data Quality Indicators</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./download.html"> 
-<span class="menu-text">Download</span></a>
+    <a class="nav-link" href="./news.html"> 
+<span class="menu-text">News</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link active" href="./about.html" aria-current="page"> 
 <span class="menu-text">About</span></a>
-  </li>  
-</ul>
-            <ul class="navbar-nav navbar-nav-scroll ms-auto">
-  <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/cropmed-project/CropMED"> <i class="bi bi-github" role="img">
-</i> 
-<span class="menu-text"></span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="https://doi.org/10.5281/zenodo.21672597"> 
-<span class="menu-text"><img src="icons/zenodo-white.svg" width="112" height="16" alt="Zenodo" style="vertical-align: middle;"></span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -134,17 +151,7 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#our-main-goals" id="toc-our-main-goals" class="nav-link active" data-scroll-target="#our-main-goals">Our main goals:</a></li>
-  <li><a href="#research-dimensions" id="toc-research-dimensions" class="nav-link" data-scroll-target="#research-dimensions">Research dimensions</a></li>
-  <li><a href="#contact-form" id="toc-contact-form" class="nav-link" data-scroll-target="#contact-form">Contact Form</a></li>
-  </ul>
-</nav>
-    </div>
+    
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -167,25 +174,17 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Brief description of MaCroPheST project, one paragraph.</p>
-<section id="our-main-goals" class="level2">
-<h2 class="anchored" data-anchor-id="our-main-goals">Our main goals:</h2>
-<p>Develop three-four questions or research areas constituting the core of MaCroPheST. Probably, the main objectives of the project.</p>
-</section>
-<section id="research-dimensions" class="level2">
-<h2 class="anchored" data-anchor-id="research-dimensions">Research dimensions</h2>
-<ul>
-<li><p>Crops spatial distributions and yields</p></li>
-<li><p>Pests spatial distributions</p></li>
-<li><p>Crop and pest temporal distribution (phenology)</p></li>
-<li><p>Experimental crop and pests responses to temperature: thermal tolerance and performance</p></li>
-<li><p>Forecasts under climate warming scenarios.</p></li>
-<li><p>Inference pest sharing events among crops: which new pests are likely to ocurr?</p></li>
-</ul>
-</section>
-<section id="contact-form" class="level2">
-<h2 class="anchored" data-anchor-id="contact-form">Contact Form</h2>
-<p>For anyone who wants to collaborate with the project.</p>
+<section id="contact" class="level1">
+<h1>Contact</h1>
+<div class="team-list">
+<div class="team-row">
+<p><strong>Mail</strong>: <a href="mailto:ignacio.moralesc@uah.es">ignacio.moralesc@uah.es</a></p>
+</div>
+</div>
+<div class="team-row">
+<p><strong>Bluesky</strong> <a href="https://bsky.app/profile/macrophest-lab.bsky.social">macrophest-lab</a></p>
+</div>
+<p>:::::::</p>
 
 
 </section>
@@ -249,13 +248,14 @@ ul.task-list li input[type="checkbox"] {
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy

@@ -349,3 +349,24 @@ details.pi-details a {
 details.pi-details a:hover {
   text-decoration: underline;
 }
+
+/* Estado al hacer scroll */
+.navbar {
+  background-color: var(--color-ember) !important; 
+  box-shadow: 0 2px 8px var(--color-ink);
+  padding-top: 0.15rem;
+  padding-bottom: 0.15rem;
+}
+
+.navbar.scrolled {
+  position: fixed;
+  background-color: var(--color-ember) !important; 
+  box-shadow: 0 2px 8px var(--color-ink);
+  padding-top: 0.15rem;
+  padding-bottom: 0.15rem;
+}
+
+.navbar.scrolled {
+  background-color: var(--color-ember) !important;
+  box-shadow: 0 2px 8px var(--color-ink);
+}

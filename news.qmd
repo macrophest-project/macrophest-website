@@ -1,0 +1,39 @@
+---
+title: "News"
+format: html
+css: [theme.css, news.css]
+---
+
+::: section-block
+# News
+:::
+
+::::::: news-list
+:::: news-item
+![](images/news/2025-01-example.jpg)
+
+::: news-item-body
+[15 enero 2025]{.news-date}
+
+### [Título de la primera noticia](news-article-1.qmd){.stretched-link}
+
+Breve descripción de una o dos frases sobre la noticia.
+
+[Leer completo →](news-article-1.qmd){.news-read-more}
+:::
+::::
+
+:::: news-item
+![](images/news/2024-12-example.jpg)
+
+::: news-item-body
+[3 diciembre 2024]{.news-date}
+
+### [Título de la segunda noticia](news-article-2.qmd){.stretched-link}
+
+Breve descripción de una o dos frases sobre la noticia.
+
+[Leer completo →](news-article-2.qmd){.news-read-more}
+:::
+::::
+:::::::
