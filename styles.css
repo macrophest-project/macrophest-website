@@ -15,7 +15,7 @@
                      url("images/peaches.jpg");
   background-size: cover;
   background-position: center;
-
+  font-family: var(--font-display);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -336,7 +336,7 @@ a {
 
 a:hover {
   color: inherit !important;
-  text-decoration: underline !important;
+  text-decoration: none !important;
 }
 
 .home-page .home-research-card h2 {
